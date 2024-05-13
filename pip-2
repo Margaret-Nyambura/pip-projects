@@ -1,0 +1,47 @@
+class Doctor {
+    constructor(doctorName, date, skills, time, isAvailable) {
+        this.doctorName = doctorName;
+        this.skills = skills;
+        this.date = date;
+        this.time = time;
+        this.isAvailable = isAvailable;
+
+        this.scheduleAppointment = {};
+       }
+
+    }
+       class Patient {
+        constructor(name, phone) {
+           this.name = name;
+           this.phone = phone;
+           this.preferences = {}; }
+       
+
+
+    //    setPreferences(doctor, date, time) {
+    //    this.preferences = { doctor, date, time }; } 
+    
+    }
+       
+      
+ function isAvailable(Doctor){
+    if(Doctor.isAvailable != true){
+        console.log("Doctor not available at the moment");
+    }
+
+    else {
+        scheduleAppointment(Doctor);{
+            console.log(`${Doctor.name} is assigned to ${Patient.name} at ${Doctor.time}`);
+
+        }
+}
+ }
+console.log(isAvailable("John", "23/4/2024", "Cardiologist", "17.00", "true"));
+
+
+
+
+
+
+
+
